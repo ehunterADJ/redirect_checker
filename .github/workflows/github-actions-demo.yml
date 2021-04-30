@@ -14,14 +14,14 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - name: Install dependencies
-        run: |
-            pip install requests  
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.8 #install the python needed
+      - name: Install dependencies
+        run: |
+            pip install requests  
       - name: execute py script # run the run.py to get the latest data
         run: |
-              python3 check.py
+              python check.py
       - run: echo "🍏 This job's status is ${{ job.status }}."
