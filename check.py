@@ -2,8 +2,8 @@ import requests
 
 responses = requests.get("https://google.com/")
 print(responses.url)
-if responses.url == "https://www.google.com/":
+if responses.url == "https://google.com/":
     print("URL matches")
 else:
-    print("URL does not match")
+    exit(1)
 print("hello")
