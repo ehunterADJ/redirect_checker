@@ -5,5 +5,5 @@ print(responses.url)
 if responses.url == "https://www.google.com/":
     print("URL matches")
 else:
-    print("URL does not match")
-print("hello")
+    exit(1)
+print("hello 2")
