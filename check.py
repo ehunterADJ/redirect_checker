@@ -1,6 +1,7 @@
 import requests
 
-responses = requests.get("http://google.com")
-
-for response in responses.history:
-    print(response.url)
+responses = requests.get("https://google.com/")
+if responses.url == "https://www.google1.com/":
+    print("URL matches")
+else:
+    exit(1)
