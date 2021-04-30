@@ -23,5 +23,5 @@ jobs:
             pip install requests  
       - name: execute py script # run the run.py to get the latest data
         run: |
-              python check.py
+            python check.py
       - run: echo "🍏 This job's status is ${{ job.status }}."
