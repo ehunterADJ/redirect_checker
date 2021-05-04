@@ -9,5 +9,5 @@ jobs:
     - name: SonarQube Scan
       uses: achilleslinux/sonarqube-action@master
       with:
-        host: ${{ http://localhost:9000 }}
-        login: ${{ bc7326fba0c99227cd7df150277db652200ad8d4 }}
+        host: ${{ secrets.SONARQUBE_HOST }}
+        login: ${{ secrets.SONARQUBE_TOKEN }}
