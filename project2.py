@@ -7,7 +7,7 @@
 # of pivot
 
 
-def partition(arr, low, high):
+def partition1(arr, low, high):
 	i = (low-1)		 # index of smaller element
 	pivot = arr[high]	 # pivot
 
